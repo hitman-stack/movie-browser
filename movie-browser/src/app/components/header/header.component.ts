@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  movieKey : string;
+  movieKey: string;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   submitHandler(evt)
   {
     evt.preventDefault();
-    this.router.navigate(['/movies'],{queryParams:{q : this.movieKey}});
+    this.router.navigate(['/movies'], {queryParams: {q : this.movieKey}});
   }
 
 }
