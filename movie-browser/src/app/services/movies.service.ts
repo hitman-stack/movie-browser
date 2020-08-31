@@ -14,4 +14,9 @@ export class MoviesService {
   {
 return this.http.get(baseURL, {params : {s : searchTerm}});
   }
+
+  getMovieDetaisl(imdbId: string): Observable<any>
+  {
+    return this.http.get(baseURL, {params : {i : imdbId}});
+  }
 }
